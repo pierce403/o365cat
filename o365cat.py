@@ -2,18 +2,18 @@ import re
 import io
 import sys
 
-f = io.open('rockyou.txt', mode="r", encoding="utf-8")
+f = io.open('10-million-password-list-top-100000.txt', mode="r", encoding="utf-8")
 
 minchars=7
 maxchars=16
 
-#for line in f:
-while True:
-  line = "potato"
-  try: 
-    line = f.readline()
-  except:
-    continue
+for line in f:
+#while True:
+#  line = "potato"
+#  try: 
+#    line = f.readline()
+#  except:
+#    continue
 
   word = line.strip()
   if len(word)<minchars:
